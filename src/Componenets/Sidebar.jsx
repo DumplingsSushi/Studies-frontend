@@ -19,7 +19,7 @@ const Sidebar = () => {
   useEffect(()=>{
         const Fetch = async()=>{
             try{
-                const res = await axios.get('http://localhost:5000/userdeets',{
+                const res = await axios.get('https://studies-backend-gamma.vercel.app/userdeets',{
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -66,4 +66,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
 
