@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import icon from "../Assets/soilder.png";
+import icon from "../assets/soilder.png";
 
 const Sidebar = () => {
   const nav = useNavigate();
@@ -66,3 +66,4 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
