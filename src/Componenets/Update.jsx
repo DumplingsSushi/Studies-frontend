@@ -52,7 +52,7 @@ const Update = () => {
 
     try {
       await axios.put(
-        `http://localhost:5000/update/${id}`,
+        `https://studies-backend-gamma.vercel.app//update/${id}`,
         {
           name: formData.name,
           email: formData.email,
@@ -156,4 +156,5 @@ const Update = () => {
 };
 
 export default Update;
+
 
