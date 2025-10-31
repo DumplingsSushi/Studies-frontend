@@ -16,7 +16,7 @@ const Edit = () => {
     useEffect(()=>{
         const Fetch = async()=>{
             try{
-                const res = await axios.get('http://localhost:5000/edit/'+id,{
+                const res = await axios.get('https://studies-backend-gamma.vercel.app/edit/'+id,{
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -113,4 +113,5 @@ const Edit = () => {
     );
 }
  
+
 export default Edit;
