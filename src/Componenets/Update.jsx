@@ -22,7 +22,7 @@ const Update = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/update/${id}`, {
+        const res = await axios.get(`https://studies-backend-gamma.vercel.app/update/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -156,3 +156,4 @@ const Update = () => {
 };
 
 export default Update;
+
