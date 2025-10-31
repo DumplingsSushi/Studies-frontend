@@ -16,7 +16,7 @@ const Edit = () => {
     useEffect(()=>{
         const Fetch = async()=>{
             try{
-                const res = await axios.get('https://studies-backend-gamma.vercel.app/edit/'+id,{
+                const res = await axios.get('https://studies-backend.onrender.com/edit/'+id,{
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -34,7 +34,7 @@ const Edit = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            const res = await axios.post("http://localhost:5000/edittask/"+id,{title,description,date},{
+            const res = await axios.post("https://studies-backend.onrender.com/edittask/"+id,{title,description,date},{
                 headers: {
                     Authorization: `Bearer ${token}`,
                 }, 
@@ -115,3 +115,4 @@ const Edit = () => {
  
 
 export default Edit;
+
