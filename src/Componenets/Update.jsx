@@ -22,7 +22,7 @@ const Update = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await axios.get(`https://studies-backend-gamma.vercel.app/update/${id}`, {
+        const res = await axios.get(`https://studies-backend.onrender.com/update/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -52,7 +52,7 @@ const Update = () => {
 
     try {
       await axios.put(
-        `https://studies-backend-gamma.vercel.app//update/${id}`,
+        `https://studies-backend.onrender.com/update/${id}`,
         {
           name: formData.name,
           email: formData.email,
@@ -156,5 +156,6 @@ const Update = () => {
 };
 
 export default Update;
+
 
 
