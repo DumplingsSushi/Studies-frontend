@@ -21,7 +21,7 @@ const Signup = () => {
         return;
     }
     try{
-        const res = await axios.post("https://studies-backend-gamma.vercel.app/signup",formData);
+        const res = await axios.post("https://studies-backend.onrender.com/signup",formData);
         console.log("Signup Response:", res.data);
         alert("Signup Successful!");
         nav('/Login');
@@ -126,4 +126,5 @@ const Signup = () => {
 };
 
 export default Signup;
+
 
