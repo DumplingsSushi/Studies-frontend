@@ -21,7 +21,7 @@ const Addtask = ({onClose}) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            const res = await axios.post("http://localhost:5000/addtask",formData,{
+            const res = await axios.post("https://studies-backend-gamma.vercel.app/addtask",formData,{
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -102,4 +102,5 @@ const Addtask = ({onClose}) => {
     );
 }
  
+
 export default Addtask;
