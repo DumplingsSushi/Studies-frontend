@@ -20,7 +20,7 @@ const Login = () => {
     setError("");
 
     try {
-      const res = await axios.post("https://studies-backend-gamma.vercel.app/login", formData);
+      const res = await axios.post("https://studies-backend.onrender.com/login", formData);
       console.log("Login Response:", res.data);
       localStorage.setItem("token", res.data.token);
       alert("Login Successful!");
@@ -105,4 +105,5 @@ const Login = () => {
 };
 
 export default Login;
+
 
