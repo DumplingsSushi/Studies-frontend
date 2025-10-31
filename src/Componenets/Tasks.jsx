@@ -17,7 +17,7 @@ const Tasks = () => {
     useEffect(()=>{
         const Fetch = async()=>{
             try{
-                const res = await axios.get('https://studies-backend-gamma.vercel.app//tasks',{
+                const res = await axios.get('https://studies-backend.onrender.com/tasks',{
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -34,7 +34,7 @@ const Tasks = () => {
 
     const handelDelete = async(id)=>{
         try{
-            await axios.delete("https://studies-backend-gamma.vercel.app/del/"+id,{
+            await axios.delete("https://studies-backend.onrender.com/del/"+id,{
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -113,4 +113,5 @@ const Tasks = () => {
  
 
 export default Tasks;
+
 
