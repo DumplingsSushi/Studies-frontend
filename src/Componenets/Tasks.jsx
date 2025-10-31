@@ -17,7 +17,7 @@ const Tasks = () => {
     useEffect(()=>{
         const Fetch = async()=>{
             try{
-                const res = await axios.get('http://localhost:5000/',{
+                const res = await axios.get('http://localhost:5000/tasks',{
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -111,4 +111,5 @@ const Tasks = () => {
       );
 }
  
+
 export default Tasks;
