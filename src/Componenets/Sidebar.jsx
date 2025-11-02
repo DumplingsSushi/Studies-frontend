@@ -57,7 +57,7 @@ const Sidebar = () => {
             {open && <h1 className="mx-2 ml-4 mt-2.5">{name}</h1>}
         </div>
       {open && <h2 className="mx-5 mt-3">{email}</h2>}
-      <div className="flex space-x-3 items-center ml-5 cursor-pointer">
+      <div className="flex space-x-3 items-center ml-2 cursor-pointer">
         {open && <button className=" mt-3 border border-gray-400 w-fit px-2 rounded-md bg-orange-200 " onClick={() => { nav(`/Update/${id}`); }}>Edit details</button>}
         {open && <button className=" mt-3 border border-gray-400 w-fit px-2 rounded-md bg-red-200" onClick={handleLogout}>Logout</button>}
       </div>
@@ -66,6 +66,7 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
 
 
 
